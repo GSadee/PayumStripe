@@ -22,6 +22,15 @@
         "ext-json": "*",
         "php-http/message-factory": "^1.1"
     },
+    "config": {
+        "policy": {
+            "advisories": {
+                "ignore": {
+                    "twig/twig": "Pulled in transitively by payum/core; no patched release supports the PHP 7.2/7.4 versions this library still targets."
+                }
+            }
+        }
+    },
     "autoload": {
         "psr-4": { "FluxSE\\PayumStripe\\": "src/" }
     },
